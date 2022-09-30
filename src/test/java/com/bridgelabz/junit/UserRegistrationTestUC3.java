@@ -24,13 +24,13 @@ public class UserRegistrationTestUC3 {
 
 	@Test
 	public void givenLastName_WhenInFormat_ShouldReturnTrue() {
-		boolean result = userRegistration.lastName("Ameet");
+		boolean result = userRegistration.lastName("Jadhav");
 		Assert.assertEquals(true, result);
 	}
 
 	@Test
 	public void givenLastName_WhenOurOfFormat_ShouldReturnFalse() {
-		boolean result = userRegistration.lastName("ameet");
+		boolean result = userRegistration.lastName("jadhav");
 		Assert.assertEquals(false, result);
 	}
 	@Test
