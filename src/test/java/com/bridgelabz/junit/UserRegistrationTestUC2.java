@@ -3,12 +3,11 @@ package com.bridgelabz.junit;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.bridglabz.junit.UserRegistrationUC1;
+import com.bridglabz.junit.UserRegistrationUC2;
 
-
-public class UserRegistractionTestUC1 {
+public class UserRegistrationTestUC2 {
 	
-	UserRegistrationUC1 userRegistration = new UserRegistrationUC1();
+	UserRegistrationUC2 userRegistration = new UserRegistrationUC2();
 	 
     @Test
     public void givenFirstName_WhenInFormat_ShouldReturnTrue() {
@@ -16,7 +15,7 @@ public class UserRegistractionTestUC1 {
         Assert.assertEquals(true, result);
     }
 
-    @Test
+	@Test
     public void givenFirstName_WhenOurOfFormat_ShouldReturnFlase() {
         boolean result = userRegistration.firstName("ameet");
         Assert.assertEquals(false, result);
@@ -34,7 +33,5 @@ public class UserRegistractionTestUC1 {
         Assert.assertEquals(false, result);
 
     }
-	
-	
 
 }
